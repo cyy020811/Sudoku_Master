@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners"
+    android:backgroundTint="@color/darkYellow"
+    android:padding="10dp"
+    android:layout_marginVertical="10dp"
+    android:id="@+id/parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Character Set"
+        android:fontFamily="@font/amaranth"
+        android:id="@+id/tvName"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

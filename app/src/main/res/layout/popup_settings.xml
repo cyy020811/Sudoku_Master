@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:alpha="0.5"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/brown">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/bg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:id="@+id/rlTitle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tvSettings"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/close"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivClose"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlTitle"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:text="BGM Volume"
+                    android:textColor="@color/black"
+                    android:textSize="23sp" />
+
+                <SeekBar
+                    android:id="@+id/seekBarVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10"
+                    android:progress="3"
+                    android:thumbTint="@color/darkBrown"
+                    android:progressTint="@color/black"
+                    android:secondaryProgressTint="@color/white"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notification"
+                        android:textSize="23sp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/black"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <Switch
+                        android:id="@+id/switchNotification"
+                        android:layout_width="59dp"
+                        android:layout_height="37dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms of Use"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
